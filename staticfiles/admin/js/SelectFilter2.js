@@ -2,7 +2,7 @@
 /*
 SelectFilter2 - Turns a multiple-select box into a filter interface.
 
-Requires jQuery, core.js, and SelectBox.js.
+Requires jQuery, myapp.js, and SelectBox.js.
 */
 (function($) {
     'use strict';
