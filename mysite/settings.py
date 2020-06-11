@@ -187,4 +187,4 @@ SOCIAL_AUTH_FACEBOOK_KEY = '3182798455085919'  # App ID
 SOCIAL_AUTH_FACEBOOK_SECRET = '9b2f79730bb12cdccc7794b10aca3a49'  # App Secret
 
 
-django_heroku.settings(locals()) 
+django_heroku.settings(locals())

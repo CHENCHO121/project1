@@ -4,29 +4,6 @@
     box-sizing: border-box;
 }
 
-.man{
-    height: 100px;
-    width: 100%;
-    background-color: white;
-    position: relative;
-}
-
-.man img{
-    width: 100px;
-    height: 95px;
-    position: absolute;
-    left: 0;
-    bottom: 1px;
-    animation-name:man_run;
-    animation-duration:5s;
-    animation-timing-function:ease-in-out;
-    animation-iteration-count: infinite;
-}
-
-@keyframes man_run {
-    from{left: 0}
-    to{left: 100%}
-}
 
 ul{
     padding: 0;
