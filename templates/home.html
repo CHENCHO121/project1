@@ -1,0 +1,134 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    {% load static %}
+    <br>
+    <div class="container ">
+        <div class="man pb-1">
+            <img src="{% static 'img/man2.gif' %}" alt="Man">
+        </div>
+        <h2 class="text-capitalize text-white text-center  text_effect"
+            style="background-color: black;border-radius: 20px">My Portfolio</h2>
+        <div class="row">
+            <div class="col-md-3 pb-3">
+                <div class="card h-100 border-info border-3">
+                    <div class="card-body text-center">
+                        <img class="img-fluid pic" src="{% static 'images/mypic.jpg' %}">
+                        <div class="card-body text-center bg-danger text-white  text_effect">
+                            <h4 class="card-title">Hi I'm Chencho!</h4>
+                            <hr color="white">
+                            <p class="card-text">I love coding, doing research and collaborating</p>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-md-9 pb-3">
+                <div class="card  h-100 border-info border-3">
+
+                    <div class="card-body text-center text-white bg-danger  text_effect" style="border-radius: 10px">
+                        <h4 class="card-title">My first job as a developer!</h4>
+                        <hr color="white">
+                        <p class="card-text">So for 1 year of doing coding with training and as well as self taught I
+                            have learned so much that I am able build any Project.</p>
+                        <p class="card-text">I am also a MCA degree holder from the VTU university during my academy
+                            time i built few projects which is another point of my experienced and I completed my MCA
+                            recently march 2020 </p>
+                        <p class="card-text">Now day I'm working as fullstack developer in python django by getting
+                            project from online but its like a part time job as of now I'm trying my best to get
+                            oppotunities and I'm able land few projects.</p>
+                        <p class="card-text">As my hunger and interests for learning never stop and end but I'm very
+                            much hunger for learning new technology and skill and explores them with my best
+                            knowledge. </p>
+                        <ul class="social-link">
+                            <a href="https://www.facebook.com/Python-Programmer-114115753666137">
+                                <li><img class="social" src="{% static 'images/fb.png' %}"></li>
+                            </a>
+                            <a href="https://web.whatsapp.com/">
+                                <li><img class="social" src="{% static 'images/watsup.png' %}"></li>
+                            </a>
+                            <a href="https://www.youtube.com/channel/UCf-hCDKAD7wT6gyS-BRLHPw/playlists?view_as=subscriber">
+                                <li><img class="social" src="{% static 'images/youtube.png' %}"></li>
+                            </a>
+                            <a href="https://www.instagram.com/accounts/login/?hl=en">
+                                <li><img class="social" src="{% static 'images/insta.jpg' %}"></li>
+                            </a>
+                        </ul>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 pb-3">
+                <div class="card h-100 border-info border-3">
+                    <div class="card-body text-center bg-danger text-white  text_effect">
+                        <h4 class="card-title">My experience as developer</h4>
+                        <hr color="white">
+                        <p class="card-text">I have 1 year of experience in coding and doing web development project</p>
+                        <p class="card-text">I'm fullstack developer work as freelancer online! </p>
+                        <p class="card-text">Design and managed a UI of Lab management system assole developer and also
+                            Create a admin who can control all customer</p>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-6 pb-3">
+                <div class="card h-100 border-info border-3">
+                    <div class="card-body text-center bg-danger text-white  text_effect">
+                        <h4 class="card-title">What I knows?</h4>
+                        <hr color="white">
+                        <p class="card-text">HTML,Css,Javascript,SQL,Django,PHP,Python,Jquery, C,C++, Core-Jave</p>
+                        <p class="card-text">Working on Wampserver, Xampserver, mongoDB, mysqli</p>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="container pb-5">
+        <div class="row">
+            <div class="col-md-6 pb-3">
+                <div class="card h-100 border-info border-3">
+                    <div class="card-body text-center bg-danger text-white  text_effect">
+                        <h4 class="card-title">How I learn?</h4>
+                        <hr color="white">
+                        <p class="card-text">Reverse engineer & first built an ugly prototypes</p>
+                        <p class="card-text">Documentation as references for my guide and tear down the final project
+                            product apart piece by piece. I break the code to figure out why thing work the way they do
+                            . I can learn anythings.</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-6 pb-3">
+                <div class="card h-100 border-info border-3">
+                    <div class="card-body text-center bg-danger text-white  text_effect">
+                        <h4 class="card-title">My Goal</h4>
+                        <hr color="white">
+                        <p class="card-text">My goal is to gain more experience and to be a very successful freelancer
+                            as fullstack developer.</p>
+                        <p class="card-text">So within a few year want to have my own company and be an enterpreneur and
+                            create a job for other people.</p>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+{% endblock %}

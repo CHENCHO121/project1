@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/man.css' %}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Portfolio </title>
+    <link rel="shortcut icon" type="image" href="{% static 'images/portfolio.png' %}">
+    <title>{% block title %}{% endblock title %}</title>
+</head>
+<body>
+
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-3 bg-primary" style="height: 657px">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item active">
+                    <a class="nav-link text-white text_effect" href="/"><h3>Dashboard</h3></a>
+                    <hr class="bg-white">
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link text-white" href="{% url 'home' %}">Home <span
+                            class="sr-only">(current)</span></a>
+                    <hr class="bg-white">
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="/ContactMe">Contact Us</a>
+                    <hr class="bg-white">
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="{% url 'register' %}">SignUp</a>
+                    <hr class="bg-white">
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="{% url 'create' %}">Create Profile</a>
+                    <hr class="bg-white">
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="{% url 'profile' %}">Profile</a>
+                    <hr class="bg-white">
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Account
+
+                    </a>
+                    <hr class="bg-white">
+                    <div class="dropdown-menu  bg-primary text-center" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item text-warning " href="{% url 'login' %}">Sign-in</a>
+                        <hr class="bg-white">
+                        <a class="dropdown-item text-warning" href="{% url 'logout' %}">Logout</a>
+                        <hr class="bg-white">
+                        <a class="dropdown-item text-warning " href="{% url 'password_change' %}">Change Password</a>
+
+                    </div>
+                </li>
+
+
+            </ul>
+        </div>
+        <div class="col-md-9">
+            {% block content %}
+            {% endblock content %}
+
+        </div>
+
+    </div>
+
+</div>
+<div class="footer">
+    <section class="text-center my-3 pt-4 pb-3">
+    <span><strong> All &copy;copyright by Chencho-CG-Gyeltshen</strong></span>
+</section>
+
+
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+</html>

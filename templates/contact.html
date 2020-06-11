@@ -1,0 +1,123 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <div class="container-fluid my-5">
+        <br><br>
+        <div class="container-fluid pb-5">
+            <div class="row">
+                <div class="man pb-1">
+                    <img src="{% static 'img/man2.gif' %}" alt="Man">
+                </div>
+                <div class="col-md-4 text-capitalize text-center">
+                    <hr class="bg-warning" style="height: 4px; width: 300px">
+                    <h3 class="text_effect">contact us</h3>
+
+                </div>
+                <div class="col-md-8 text-center text-justify">
+                    <p>
+                        I am a passionate person who love just one web developer and this is the precise
+                        reason why
+                        my webiste and blog come out so nice. So, if you want to preserve those priceless moments and
+                        want
+                        nothing but the best then drop in your enquiry below. If you do not like filling forms then you
+                        can call
+                        me any time 24×7. We are literally available round-the-clock! We offer a variety of attractive
+                        packages
+                        to fit every party’s budget.
+                    </p>
+                    <p>
+                        i will not only help you with your requirements but also send my best sample
+                        as per your
+                        budget and style. And what if something happens? Don’t worry we have backups. We ensure that
+                        everything
+                        goes on smoothly so that you spend your time attending your guests and enjoying your day while
+                        we keep it
+                        for you for eternity.
+                    </p>
+                </div>
+
+            </div>
+            <hr>
+
+        </div>
+        {# map start from here......#}
+
+        <section class="container-fluid bg-dark pb-5" style="border-radius: 40px">
+            <div class="container">
+                <h3 class="text-capitalize text-white text-center text_effect">our contact details</h3>
+                <hr style="width:300px;background-color:white">
+                <div class="row ">
+                    <div class="col md-12">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7778.312353546095!2d77.64704462232531!3d12.897677271797722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1358b149f039%3A0x56908aaa4c6d203a!2sSomasundarapalya%2C%20Bengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1591864539185!5m2!1sen!2sin" width="100%" height="400" frameborder="0" width="100%" height="400" frameborder="0" style="border-radius:20px; margin-top: 46px"  allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+        <div class="col md-6 my-5 text-center text-capitalize">
+            <hr class="bg-warning" style="height: 4px; width: 300px">
+            <h2 class="text_effect">Contact Info</h2>
+
+            <address>
+                <h6>Bangalore</h6>
+                <h6>hsr layout</h6>
+                <h6>near madina masjid road</h6>
+                <h5>Bangalore-68</h5>
+            </address>
+        </div>
+
+
+        <div class="row my-5">
+            <div class="col-md-12 ">
+                <h3 class="text_effect text-capitalize text-center">Contact Us</h3>
+                <form method="post" style="background-color:whitesmoke; border-radius: 30px">
+                    {% csrf_token %}
+                    <div class="form-row text-capitalize text-center">
+                        <div class="form-group col-md-6">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Email"
+                                   required>
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-row  text-capitalize text-center">
+                        <div class="form-group col-md-6">
+                            <label for="phone">Phone</label>
+                            <input type="tel" class="form-control" id="phone" name="phone" placeholder="Phone Number"
+                                   required>
+                        </div>
+
+                        <div class="row  text-capitalize text-center">
+                            <div class="form-group col-md-12">
+                                <label for="exampleFormControlTextarea1">Example textarea</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" name="msg" rows="6"
+                                          cols="120" required></textarea>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block" style="border-radius: 50px">Submit</button>
+                </form>
+
+
+            </div>
+
+            {# Contact us end here....#}
+
+
+        </div>
+
+
+    </div>
+
+{% endblock content %}

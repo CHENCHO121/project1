@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% load static %}
+{% block content %}
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+
+        <div class="row">
+            <div class="col-md-7 mx-auto">
+               <fieldset>
+                   <legend class="text-center text_effect">Create Profile</legend>
+                    {{ form | crispy }}
+               </fieldset>
+            </div>
+            <div class="col-md-6 mx-auto pb-5">
+                <button type="submit" class="btn btn-primary btn-lg btn-block">Create Profile</button>
+
+            </div>
+        </div>
+
+
+    </form>
+{% endblock %}

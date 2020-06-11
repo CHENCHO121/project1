@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% load static %}
+
+{% block content %}
+
+    <div class="container-fluid">
+    <div class="row">
+        <div class="col-md-4 mt-3">
+            <img class="card-img-top rounded-circle account-img" src="{{ user.profile.profile_img.url }}" alt="User image">
+        </div>
+        <div class="col-md-8 mt-3 ">
+            <div class="card mx-auto">
+            <div class="card-body btn-success">
+              <h5 class="card-title text_effect">{{ user.username }}</h5>
+              <hr>
+               <p class="card-text">First Name:<span class="text-warning">{{ user.first_name }}</span> </p>
+               <p class="card-text">Last Name:<span class="text-warning">{{ user.last_name }}</span></p>
+               <p class="card-text">About Me:<span class="text-warning">{{ user.profile.bio }}</span></p>
+               <p class="card-text">Phone-No: <span class="text-warning">{{ user.profile.phone_no }}</span></p>
+               <p class="card-text">Birth Date: <span class="text-warning">{{ user.profile.dob }}</span></p>
+
+          </div>
+        </div>
+
+
+            <button class="mt-3 btn btn-danger btn-lg btn-block"><a href="{% url 'update' %}" class="text-white">Update Profile</a> </button>
+
+        </div>
+
+
+    </div>
+    </div>
+    <hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock content %}

@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% block content %}
+    <h2 class="text-center text_effect">Sign-In page</h2>
+
+    <form method="post">
+        {% csrf_token %}
+        <div class="row">
+            <div class="col-md-5 mx-auto">
+                {{ form | crispy }}
+                <input type="submit" value="Sign-In" class="btn btn-primary btn-lg btn-block">
+                <p><strong>-- OR --</strong></p>
+                <button class="btn-success btn-lg btn-block "><a href="{% url 'social:begin' 'facebook' %}"
+                                                                 class="text-white">Login with Facebook</a></button>
+
+                <button class="btn-success btn-lg btn-block "><a href="{% url 'password_reset' %}" class="text-white">Forgot
+                    Password</a></button>
+
+            </div>
+
+        </div>
+
+    </form>
+
+
+{% endblock content %}
